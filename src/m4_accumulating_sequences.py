@@ -49,7 +49,10 @@ def run_test_make_simple_list():
     print('Actual:  ', actual)
 
     # Test 2 (add your test here):
-
+    expected = [4, 5, 6, 7, 8, 9, 10]
+    actual = make_simple_list(4, 10)
+    print('Expected:', expected)
+    print('Actual:  ', actual)
 
 def make_simple_list(m, n):
     """
@@ -94,14 +97,14 @@ def run_test_make_simple_string():
     print('Testing the   make_simple_string   function:')
     print('--------------------------------------------------')
     # Test 1:
-    expected = '5-6-7-8-9-10-11-12-13-'
-    actual = make_simple_string(5, 13)
+    expected = '5-6-7-8-'
+    actual = make_simple_string(5, 8)
     print('Expected:', expected)
     print('Actual:  ', actual)
 
     # Test 2 (add your test here):
-    expected = '7-8-9-10-'
-    actual = make_simple_string(7, 10)
+    expected = '7-8-9-10-11-'
+    actual = make_simple_string(7, 11)
     print('Expected:', expected)
     print('Actual:  ', actual)
 
